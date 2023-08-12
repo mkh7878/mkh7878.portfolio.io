@@ -1,3 +1,4 @@
+const container = document.getElementById('threejs-container');
 
 //create camera     
 	var camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 1000); 
@@ -216,4 +217,6 @@ function onWindowResize() {
 
 // Finally, call the draw loop.      
 requestAnimationFrame(draw());
+
+container.appendChild(renderer.domElement);
       
