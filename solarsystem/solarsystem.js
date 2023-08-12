@@ -33,7 +33,7 @@ const container = document.getElementById('threejs-container');
  //VENUS 
       var venusGeometry = new THREE.SphereGeometry(0.258, 25, 25);
       var venusMaterial = new THREE.MeshBasicMaterial();
-      venusMaterial.map = myTextureLoader.load('venusmap.jpg');
+      venusMaterial.map = myTextureLoader.load('solarsystem/venusmap.jpg');
       var venus = new THREE.Mesh(venusGeometry, venusMaterial);
       scene.add(venus);
       
