@@ -105,7 +105,8 @@ const container = document.getElementById('threejs-container');
 // We can also set the size of the render window
 	renderer.setSize(window.innerWidth, window.innerHeight);
 // Finally we want to connect the renderer to the HTML document
-	document.body.appendChild(renderer.domElement);
+//	document.body.appendChild(renderer.domElement
+	container.appendChild(renderer.domElement);
 // And make sure that when the page is resized, everything gets updated 
 	window.addEventListener('resize', onWindowResize, false); 
     var controls = new THREE.OrbitControls (camera, renderer.domElement);
@@ -218,5 +219,5 @@ function onWindowResize() {
 // Finally, call the draw loop.      
 requestAnimationFrame(draw());
 
-container.appendChild(renderer.domElement);
+
       
