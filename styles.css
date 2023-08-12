@@ -1,5 +1,13 @@
+/* styles.css */
+
+/* Apply Montserrat font to headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Apply Lato font to body text */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: white;
 }
 
